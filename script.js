@@ -14,7 +14,7 @@ function handleNoClick() {
   yesBtn.style.fontSize = (size + 8) + "px";
 }
 
-function sendYes() {
-  window.location.href =
+function sendYes() 
+  window.open
     "https://wa.me/919813279342?text=I%20said%20YES%20bubu%20%F0%9F%92%95";
 }
