@@ -2,18 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Valentine 💖</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Valentine</title>
+  <style>
+    body {
+      background: pink;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding-top: 100px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 12px 24px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #yes {
+      background: red;
+      color: white;
+    }
+
+    #no {
+      background: white;
+      color: black;
+    }
+  </style>
 </head>
+
 <body>
 
   <h2>Will you be mine Valentine bubu ♾️🫀🌍</h2>
 
-  <div class="buttons">
-    <button class="yes-button" onclick="sendYes()">Yes 💖</button>
-    <button class="no-button" onclick="handleNoClick()">No 😢</button>
-  </div>
+  <button id="yes" onclick="sendYes()">YES</button>
+  <button id="no" onclick="growYes()">NO</button>
 
-  <script src="script.js"></script>
+  <script>
+    let yesSize = 20;
+
+    function growYes() {
+      yesSize += 10;
+      document.getElementById("yes").style.fontSize = yesSize + "px";
+    }
+
+    function sendYes() {
+      // ⚠️ REPLACE NUMBER BELOW (NO +, NO SPACES)
+      const url = "https://api.whatsapp.com/send?phone=919813279342&text=I%20said%20YES%20bubu%20%F0%9F%92%95";
+      window.location.href = url;
+    }
+  </script>
+
 </body>
 </html>
