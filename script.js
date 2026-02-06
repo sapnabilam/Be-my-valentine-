@@ -16,5 +16,5 @@ function handleNoClick() {
 
 function sendYes() {
   window.location.href =
-    "https://wa.me/91XXXXXXXXXX?text=I%20said%20YES%20bubu%20%F0%9F%92%95";
+    "https://wa.me/919813279342?text=I%20said%20YES%20bubu%20%F0%9F%92%95";
 }
