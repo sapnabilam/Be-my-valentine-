@@ -20,6 +20,7 @@ h2 {
   gap: 15px;
 }
 
+/* IMPORTANT: font-size must be HERE */
 .yes-button {
   font-size: 20px;
   padding: 15px 30px;
